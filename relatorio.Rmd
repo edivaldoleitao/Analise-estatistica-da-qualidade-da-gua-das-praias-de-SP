@@ -1,0 +1,73 @@
+---
+title: "Relatorio 1va"
+author: "Edivaldo Leitão"
+date: "2023-01-06"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Questão 1
+
+A tabela a seguir apresenta dados estatísticos sobre os enterococcus das 
+praias filtradas  a partir da cidade 'ILHA COMPRIDA', sendo a média entre os 
+valores, a mediana que é o valor que fica exatamente na metade da amostra e Q1 e
+Q3 que representam valores que delimitam a amostra em até 25% e 75% respectivamente,
+além dos valores de máximo e mínimo, e desvio padrão para entender o valor de dispersão
+da amostra.
+
+```{r cars, echo=FALSE}
+load("C:/Users/Win10/Documents/df.Rdata")
+knitr::kable(df[,1:8])
+```
+
+### Questão 2
+
+O gráfico de barras a seguir apresenta a quantidade de amostras de cada praia 
+cidade de 'ILHA COMPRIDA' e mostra a proporção de cada barra em relação ao total
+da amostra, de forma decrescente.
+
+```{r pressure, echo=FALSE}
+load("C:/Users/Win10/Documents/bar.Rdata")
+bar
+```
+
+### Questão 3
+
+O gráfico pizza a seguir mostra os mesmos dados do gráfico anterior, mas com uma 
+visualização mais rápida de como se divide a amostra total.
+
+```{r pie, echo=FALSE}
+load("C:/Users/Win10/Documents/pie.Rdata")
+pie
+```
+
+
+
+
+### Questão 4
+
+O gráfico a seguir é um histograma que mostra a distribuição de frequência de 
+cada praia, sendo o eixo Y a frequência e o eixo X a faixa de valor do enterococcus
+para praia que estão representadas com cores diferentes.
+
+```{r hist, echo=FALSE}
+load("C:/Users/Win10/Documents/hist.Rdata")
+hist
+```
+
+
+
+### Questão 5
+
+O gráfico a seguir é um boxplot, que fornece informações sobre a distribuição da
+amostra, representando os valores mínimo e máximo assim como os quartis Q1 e Q3,
+além da mediana, de forma mais simples e rápida.
+
+
+```{r box, echo=FALSE}
+load("C:/Users/Win10/Documents/box.Rdata")
+box
+```
